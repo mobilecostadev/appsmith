@@ -1,0 +1,26 @@
+INSERT INTO public."users" (
+	"gender",
+	"latitude",
+	"longitude",
+	"dob",
+	"phone",
+	"email",
+	"image",
+	"country",
+	"name",
+	"created_at",
+	"updated_at"
+)
+VALUES (
+	'{{insert_form.formData.gender}}',
+	'{{insert_form.formData.latitude}}',
+	'{{insert_form.formData.longitude}}',
+	'{{insert_form.formData.dob}}',
+	'{{insert_form.formData.phone}}',
+	'{{insert_form.formData.email}}',
+	'{{insert_form.formData.image}}',
+	'{{insert_form.formData.country}}',
+	'{{insert_form.formData.name}}',
+	'{{insert_form.formData.created_at}}',
+	'{{insert_form.formData.updated_at}}'
+);

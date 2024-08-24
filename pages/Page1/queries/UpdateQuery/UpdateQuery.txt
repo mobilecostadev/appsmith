@@ -1,0 +1,13 @@
+UPDATE public."users" SET
+		"gender" = '{{update_form.fieldState.gender.isVisible ? update_form.formData.gender : update_form.sourceData.gender}}',
+		"latitude" = '{{update_form.fieldState.latitude.isVisible ? update_form.formData.latitude : update_form.sourceData.latitude}}',
+    "longitude" = '{{update_form.fieldState.longitude.isVisible ? update_form.formData.longitude : update_form.sourceData.longitude}}',
+		"dob" = '{{update_form.fieldState.dob.isVisible ? update_form.formData.dob : update_form.sourceData.dob}}',
+		"phone" = '{{update_form.fieldState.phone.isVisible ? update_form.formData.phone : update_form.sourceData.phone}}',
+		"email" = '{{update_form.fieldState.email.isVisible ? update_form.formData.email : update_form.sourceData.email}}',
+		"image" = '{{update_form.fieldState.image.isVisible ? update_form.formData.image : update_form.sourceData.image}}',
+		"country" = '{{update_form.fieldState.country.isVisible ? update_form.formData.country : update_form.sourceData.country}}',
+		"name" = '{{update_form.fieldState.name.isVisible ? update_form.formData.name : update_form.sourceData.name}}',
+		"created_at" = '{{update_form.fieldState.created_at.isVisible ? update_form.formData.created_at : update_form.sourceData.created_at}}',
+		"updated_at" = '{{update_form.fieldState.updated_at.isVisible ? update_form.formData.updated_at : update_form.sourceData.updated_at}}'
+	WHERE "id" = {{data_table.selectedRow.id}};
